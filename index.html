@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Rabbit : Home</title>
+        <link rel="icon" type="image/icon" href="assets/images/tabicon.ico">
+
+        <link rel="stylesheet" type="text/css" href="">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700,700i|Josefin+Sans:700" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link rel="icon" href="assets/images/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
+    </head>
+
+    <style>
+        .meter {
+            position: relative;
+            border: 1px solid #DADADA;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            margin-bottom: 1em;
+            height: 26px;
+            line-height: 26px;
+            font-size: 16px;
+            width: 70%;
+        }
+        .meter > span {
+            display: block;
+            height: 100%;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+        .meter > span:after, .animate > span > span {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent) );
+            background-image: -moz-linear-gradient( -45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent );
+            z-index: 1;
+            -webkit-background-size: 50px 50px;
+            -moz-background-size: 50px 50px;
+            /*-webkit-animation: move 2s linear infinite;*/
+            -webkit-border-top-right-radius: 8px;
+            -webkit-border-bottom-right-radius: 8px;
+            -moz-border-radius-topright: 8px;
+            -moz-border-radius-bottomright: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            -webkit-border-top-left-radius: 20px;
+            -webkit-border-bottom-left-radius: 20px;
+            -moz-border-radius-topleft: 20px;
+            -moz-border-radius-bottomleft: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            overflow: hidden;
+            /*animation: reverse progress-bar-stripes 0.30s linear infinite, animate-positive 2s;*/
+
+        }
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .emerald > span {
+            /*background-color: #2ecc71;*/
+        }
+        .meter > span {
+            display: block;
+            height: 100%;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+        .meter > span > span {
+            margin-left: 4px;
+            color: #fff;
+        }
+    </style>
+
+    <body>
+        <div id="index">                                           <!-- Index starts here -->
+            <div class="container main">
+                <div class="row home">
+                    <div id = "index_left" class="col-md-6 left">
+                        <img class="img-responsive img-rabbit" src="assets/images/home.jpg">
+                    </div>
+                    <div id = "index_right" class="col-md-6 text-center right">
+                        <div class="logo">
+                            <img src="assets/images/logo.png">
+                            <h4>个人简历</h4>
+                        </div>
+                        <p class="home-description">
+                             我叫姚子豪，这是我制作的H5简历，欢迎观看哦。
+
+                        </p>
+                        <div class="btn-group-vertical custom_btn animated slideinright">
+                            <div id="about" class="btn btn-rabbit">个人资料</div>
+                            <div id="work" class="btn btn-rabbit">职业技能</div>
+                            <div id="contact" class="btn btn-rabbit">工作经验</div>
+                        </div>      
+                        <div class="social">
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>                                                      <!-- index ends here -->
+
+        <div id="about_scroll" class="pages ">                      <!-- about strats here  -->
+            <div class="container main">
+                <div class="row">
+                    <div class="col-md-6 left" id="about_left">
+                        <img class="img-responsive img-rabbit" src="assets/images/about.jpg">
+                    </div>
+
+                    <div class="col-md-6 right" id="about_right">
+                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> 返回主页 </a>
+                        <div id="watermark1">
+                            <h2 class="page-title" text-center>个人资料</h2>
+                        </div>
+                        <p>姓名：姚子豪</p>
+                        <p>性别：男</p>
+                        <p>学历：本科</p>
+                        <p>毕业学校：湖北理工学院</p>
+                        <p>工作经验：1.5年</p>
+                        <p>求职岗位：前端工程师</p>
+                        <p>性格：温和，对技术充满热爱，能迅速融入团队开发</p>
+                        <hr>
+                        <p>联系电话：18271682808</p>
+                        <p>博客地址：<a href="http://47.99.99.187"  target="_blank">http://47.99.99.187</a></p>
+                      </div>
+                </div>
+            </div>            
+        </div>                                                                <!-- About ends here -->
+
+        <div id="work_scroll" class="pages">                                  <!-- Work starts here -->
+            <div class="container main">
+                <div class="row">
+                    <div class="col-md-6" id="work_left">
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item"><img class="img-responsive img-rabbit" src="assets/images/work.jpg"></div>
+                            <!--<div class="item"><img class="img-responsive img-rabbit" src="assets/images/home.jpg"></div>-->
+                            <!--<div class="item"><img class="img-responsive img-rabbit" src="assets/images/contact.jpg"></div>-->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="work_right">
+                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> 返回主页 </a>
+                        <div id="watermark2">
+                            <h2 class="page-title" text-center>职业技能</h2>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 80%;"><span>HTML(HTML5)</span></span>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 80%;"><span>CSS(CSS3)</span></span>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 80%;"><span>Javascript(ES6)</span></span>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 80%;"><span>JQuery</span></span>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 80%;"><span>VUE</span></span>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 80%;" title="如bootstrap、layUI、ElementUI等"><span>一些UI框架</span></span>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 50%;font-size: 1.4rem;"><span>git(coding)</span></span>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 50%;font-size: 1.4rem;"><span>微信小程序MPVue</span></span>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 40%;"><span>webpack</span></span>
+                        </div>
+                        <div class="meter emerald">
+                            <span style="width: 40%;font-size: 1.4rem"><span>Java、PHP、MYSQL</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>                                                                 <!-- Work ends here  -->
+
+
+        <div id="contact_scroll" class="pages">                             <!-- Contact starts here -->
+            <div class="container main">
+                <div class="row">
+                    <div class="col-md-6 left" id="contact_left">
+                        <img class="img-responsive img-rabbit" src="assets/images/contact.jpg">
+                    </div>
+
+                    <div class="col-md-6 right" id="contact_right">
+                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> 返回主页 </a>
+                        <div id="watermark3">
+                            <h2 class="page-title" text-center>Contact</h2>
+                        </div>
+                        <p class='subtitle'>I'm based in cheltenham in the UK, not far from Bristol, Birmingham, Oxford and Swindom. Drop me a line.
+                        </p>
+                        <!-- form -->
+                        <form class="form_edit"> 
+                            <div class="form-group">
+                                <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+                            </div>
+
+                            <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+
+                            <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-rabbit submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       
+            <footer class="text-center">
+                <div class="container bottom">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </footer>
+            
+        </div>                                                              <!-- Contact ends here -->
+        
+        <script src="assets/js/jquery-3.1.0.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script>
+            $( document ).ready(function() {
+
+                $("#about_scroll").fadeOut();
+                $("#work_scroll").fadeOut();
+                $("#contact_scroll").fadeOut();
+
+                $("#about").click(function(){
+                    $("#index").fadeOut();
+                    $("#about_scroll").fadeIn();
+                    $('#about_left').addClass('animated slideInLeft');
+                    $('#about_right').addClass('animated slideInRight');
+                });
+                $("#work").click(function(){
+                    $("#index").fadeOut();
+                    $("#work_scroll").fadeIn();
+                    $('#work_left').addClass('animated slideInLeft');
+                    $('#work_right').addClass('animated slideInRight');
+                });
+                $("#contact").click(function(){
+                    $("#index").fadeOut();
+                    $("#contact_scroll").fadeIn();
+                    $('#contact_left').addClass('animated slideInLeft');
+                    $('#contact_right').addClass('animated slideInRight');
+                });
+
+                $(".back").click(function(){
+                    $(".pages").fadeOut();
+                    $("#index").fadeIn();
+                    $('#index_left').addClass('animated slideInLeft');
+                    $('#index_right').addClass('animated slideInRight');
+                });
+
+            });
+            var colorArr=["#2ecc71","#e67e22","#8e44ad","#f1c40f","#2c3e50","#c0392b","#7f8c8d","#2ecc71","#e67e22","#8e44ad"];
+            $(".emerald>span").each(function(index,element){
+                element.style.backgroundColor=colorArr[index];
+            })
+        </script>
+    </body>
+</html>
